@@ -54,7 +54,7 @@ function showDescription(book) {
     document.body.removeChild(popup);
   };
 
-  const title = document.createElement("h2");
+  const title = document.createElement("h3");
   title.textContent = book.title;
 
   const author = document.createElement("p");
@@ -80,7 +80,7 @@ window.onload = function () {
     const card = document.createElement("div");
     card.classList.add("card");
 
-    const title = document.createElement("h2");
+    const title = document.createElement("h3");
     title.textContent = book.title;
     card.appendChild(title);
 
