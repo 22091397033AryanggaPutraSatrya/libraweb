@@ -38,6 +38,54 @@ const books = [
     "Novel ini menggambarkan kehidupan sekelompok orang di sebuah kampung kecil yang bernama Belitong. Cerita ini berfokus pada kehidupan sehari-hari “orang-orang biasa” di kampung tersebut dan perjuangan mereka untuk mengatasi tantangan dan memperbaiki nasib mereka. Dalam novel ini, pembaca akan diperkenalkan pada sejumlah karakter yang unik dan beragam, masing-masing dengan latar belakang dan cerita hidup yang berbeda. Dari petani miskin hingga pedagang kaki lima, dari guru yang gigih hingga anak-anak yang bersemangat untuk belajar, setiap karakter memiliki cerita dan perjuangan mereka sendiri. Lebih dari sekadar menggambarkan kehidupan sekelompok orang, “Orang-Orang Biasa” juga menyentuh isu-isu sosial yang lebih luas, seperti kesenjangan ekonomi, pendidikan yang terbatas, dan perjuangan dalam mencari keadilan. Novel ini mengajak pembaca untuk merenungkan nilai-nilai kehidupan, kebaikan, dan pentingnya kebersamaan dalam menghadapi kesulitan. Dengan gaya penulisan yang lugas dan mengalir, Andrea Hirata mampu menghidupkan karakter-karakternya dengan penuh empati dan menghadirkan gambaran yang jelas tentang kehidupan masyarakat kecil yang sering terabaikan. “Orang-Orang Biasa” memberikan penghormatan kepada kekuatan dan ketahanan manusia dalam menghadapi keterbatasan dan menjalani kehidupan dengan martabat, sehingga menjadikannya sebagai kisah yang menginspirasi dan mengharukan.",
     "assets/orgbiasa.png"
   ),
+  new Book(
+    "Laskar Pelangi",
+    "Andrea Hirata",
+    "Novel ini bercerita tentang kehidupan 10 anak dari keluarga miskin yang bersekolah (SD dan SMP) di sebuah sekolah Muhammadiyah di Belitung yang penuh dengan keterbatasan. Mereka bersekolah dan belajar pada kelas yang sama dari kelas 1 SD sampai kelas 3 SMP, dan menyebut diri mereka sebagai Laskar Pelangi. Pada bagian-bagian akhir cerita, anggota Laskar Pelangi bertambah satu anak perempuan yang bernama Flo, seorang murid pindahan. Keterbatasan yang ada bukan membuat mereka putus asa, tetapi malah membuat mereka terpacu untuk dapat melakukan sesuatu yang lebih baik. Laskar Pelangi merupakan buku pertama dari Tetralogi Laskar Pelangi. Buku berikutnya adalah Sang Pemimpi, Edensor dan Maryamah Karpov. Buku ini tercatat sebagai buku sastra Indonesia terlaris sepanjang sejarah.",
+    "assets/laskar.jpg"
+  ),
+  new Book(
+    "5 cm",
+    "Donny Dhirgantoro",
+    "Novel ini menceritakan kisah persahabatan lima anak muda yaitu Genta, Arial, Riani, Zafran, dan Ian. Mereka telah bersahabat selama tujuh tahun dan sering menghabiskan waktu bersama di tempat tongkrongan favorit mereka. Lima sahabat ini memiliki sifat unik yang membuat persahabatan mereka  menjadi sangat menyenangkan.  Arial adalah sosok pria yang paling tampan dan sporty diantara mereka berlima. Kemudian Ada Riani yang merupakan seorang cewek yang kompetitif dan cerdas karena kesukaannya membaca dan belajar. Tokoh lainnya adalah Zafran yang digambarkan sebagai sosok puitis yang  sangat menggemari syair dan sastra. Lalu ada karakter Ian yang merupakan seorang fans fanatik sepak bola. Terakhir adalah Genta,  seorang aktivis kampus yang juga dianggap sebagai leader diantara mereka berlima. Cerita dimulai ketika Genta mengusulkan bahwa mereka tidak boleh bertemu dan berkomunikasi satu sama lain selama tiga bulan. Genta berpendapat jika mereka melakukan hal ini maka mereka bisa lebih fokus untuk mencapai goals pribadi mereka dan membenahi diri Pada awalnya, ide ini ditentang oleh Riani. Tapi, pada akhirnya mereka semua sepakat untuk melakukannya. Selama tiga bulan mereka tidak bertemu, banyak hal yang telah mereka lakukan.",
+    "assets/5cm.jpg"
+  ),
+  new Book(
+    "Bumi",
+    "Tere Liye",
+    "Novel ini mengisahkan tentang petualangan 3 remaja yang berusia 15 tahun bernama Raib, Ali dan Seli. Namun mereka bukanlah remaja biasa, melainkan remaja yang memiliki kekuatan khusus seperti Raib yang bisa menghilang, Seli yang bisa mengeluarkan petir dan Ali seorang pelajar yang sangat jenius. Petualangan menjelajah dunia paralel mereka dimulai dari sini, dunia paralel yang pertama mereka jelajahi adalah Klan Bulan. Tetapi mereka tidak hanya sekedar menjelajah saja, melainkan mereka harus bertarung untuk menyelamatkan dunia paralel dari orang-orang jahat. Orang-orang jahat tersebut yakni bernama Tamus. Tamus memiliki ambisi untuk menguasai dunia, oleh karena itu ia berusaha untuk membebaskan seorang pangeran yang sangat kuat dan memiliki ambisi yang sama. Pangeran tersebut sedang dipenjara yang disebut Penjara Bayangan dibawah Bayangan. Pangeran tersebut bernama Si Tanpa Mahkota.",
+    "assets/bumi.jpg"
+  ),
+  new Book(
+    "Bulan",
+    "Tere Liye",
+    "Dalam novel Bulan petualangan antara Raib dan kedua kawannya masih berlanjut. Miss Selena akhirnya muncul di sekolah saat beberapa bulan setelah kejadian di klan Bulan. Miss Selena memberikan kabar menyenangkan bagi para murid yang mempunyai jiwa petualang, seperti Raib, Ali, dan Seli. Miss Selena bersama Av berniat untuk mengajak mereka berkunjung ke klan Matahari selama kurang lebih dua minggu. Av memiliki rencana hendak menemui ketua konsil klan Matahari. Diduga Konsil klan Matahari ingin menguasai klan matahari guna mencari federasi dalam melawan Tamus yang diperkirakan akan bebas dan juga membebaskan raja tanpa mahkota. Saat sudah di klan Matahari mereka disambut oleh Festival Matahari Bunga Matahari. Di saja Raib, Seli, Ali, juga Ily diminta untuk menjadi peserta kesepuluh dari Festival Bunga Matahari oleh ketua konsil klan Matahari, yaitu Av dan Miss Selena. Dengan segala kemampuan yang dimiliki oleh Seli, Raib, dan Ily bersamaan dengan senjata panah dan pemukul, mereka mempunyai tekad untuk melewati rintangan yang sangat berbahaya itu.",
+    "assets/bulan.png"
+  ),
+  new Book(
+    "Matahari",
+    "Tere Liye",
+    "Berawal dari keseruan Raib dan Seli ketika menonton pertandingan bola basket yang dimainkan oleh Ali. Raib yang memang sering kesal dengan tingkah jahil Ali menatap tidak percaya jika temannya itu pandai bermain basket. Bahkan permainannya seperti atlet profesional.  Terlebih lagi Raib tiba-tiba merasa cemburu ketika Ali dikerubuti oleh banyak fans. Lagi-lagi, novel ini menggunakan alur maju-mundur, seperti yang diceritakan oleh Raib mengenai perjalanannya ke Klan Matahari empat bulan yang lalu.  Raib merasa sedih karena Ily yang merupakan anak dari Ilo dan Vey dari Klan Bulan, telah meninggal dunia. Raib merasa aneh dengan Miss Selena yang tiba-tiba menghilang.",
+    "assets/matahari.jpg"
+  ),
+  new Book(
+    "Alice in Wonderland",
+    "Lewis Carrol",
+    "Mengisahkan Alice yang masuk ke dalam lubang kelinci yang membawanya ke sebuah negeri ajaib yang berisi binatang-binatang yang dapat berbicara. Alice dengan pengalaman pertamanya dapat makan kue dan menjadi besar karenanya. Dan dapat berubah kecil dan sangat kecil hingga mendapatkan pengalaman yang seru. Cerita terus berlanjut saat dia bertemu dengan berbagai jenis hewan, sampai ia menemukan Sang ratu dan Sang Raja Hati, beserta prajuritnya yang terbuat dari kartu. Raja dan Ratu yang seenaknya memberikan hukuman (memenggal kepala) kepada siapa pun yang ia tak sukai. sDi akhir cerita pada saat persidangan, semua hewan berkumpul dan Alice ada di sana. Alice berubah menjadi ukuran besar yang sangat besar dan membuat mereka kebingungan.",
+    "assets/aalice.jpg"
+  ),
+  new Book(
+    "Naruto",
+    "Masashi Kishimoto",
+    "Di desa konohagakure,naruto yang dulunya pembuat onar disana memulai kehidupan ninjanya dengan sasuke dan sakura.Naruto dan teman-temannya berkembang dengan berbagai ujian dan pertarungan di sana.Tapi,sasuke tidak menyerah dengan balas dendamnya dan bergabung dengan orochimaru. Di sisi lain,jiraiya harus mengambil keputusan yang sulit karena harus menghadapi mantan muridnya sendiri,pain.dia memantapkan hatinya dan menyerang pain.Tetapi wujud asli pain tidak muncul.dia hanya menemukan keenam bidaknya yang salah satunya adalah yahiko. Di lain pihak,sasuke telah menemukan itachi dan melawannya dengan pertarungan satu lawan satu demi menguak alasan dibangkitkannya mangekyou sharingan.Jika sasuke bisa menggunakan mangekyou sharingan,maka ada tiga orang pengendali mangekyou sharingan. Mereka saling bertarung dengan ninjutsu.Sebab jika bertarung dengan genjutsu,maka tidak ada kemajuan sedikit pun.Karena sasuke telah mematahkan tsukoyomi itachi.Akankah ini akan berakhir dengan imbang?",
+    "assets/naruto.jpg"
+  ),
+  new Book(
+    "One Piece",
+    "Eiichiro Oda",
+    "One Piece adalah sebuah anime dan manga tentang sekelompok bajak laut yang dipimpin oleh Monkey D. Luffy yang pergi mencari harta karun legendaris bernama One Piece. Luffy menjadi manusia karet yang memiliki kekuatan memanjangkan tubuhnya setelah secara tak sengaja memakan buah Gomu Gomu, salah satu dari buah iblis. Selama perjalanan Luffy banyak bertemu dengan teman baru dan musuh yang beragam.",
+    "assets/onepiece.jpg"
+  )
 ];
 
 function showDescription(book) {
