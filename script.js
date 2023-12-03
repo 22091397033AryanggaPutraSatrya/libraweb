@@ -9,6 +9,12 @@ class Book {
 
 const books = [
   new Book(
+    "Harry Potter",
+    "J.K. Rowling",
+    "Novel Ini Menceritakan Tentang Harry Potter, Seorang Anak Laki-Laki Yatim Piatu Yang Pada Usia Sebelas Tahun Mengetahui Bahwa Ia Adalah Seorang Penyihir. Selama Sebelas Tahun Ia Hidup Dalam Dunia Biasa Nonsihir, Atau Disebut Juga Dengan Muggle. Kemampuan Sihirnya Adalah Bawaan Dan Ia Diundang Untuk Menghadiri Sekolah Yang Mengajarkan Tentang Keterampilan Dan Pengetahuan Sihir. Harry Kemudian Menjadi Pelajar Di Sekolah Sihir Hogwarts, Dan Di Sana Sebagian Besar Kisah Novel Berlangsung. Di Hogwarts, Harry Melalui Masa-Masa Remajanya, Ia Belajar Untuk Mengatasi Berbagai Masalah Yang Dihadapinya: Sihir, Sosial Dan Emosional, Termasuk Permasalahan Remaja Biasa Seperti Cinta, Persahabatan, Dan Ujian Sekolah, Serta Ujian Terbesar Untuk Mempersiapkannya Dalam Menghadapi Konfrontasi Yang Ada Di Depannya.",
+    "assets/harry.png"
+  ),
+  new Book(
     "Si Putih",
     "Tere Liye",
     "Pembaca serial BUMI karya Tere Liye pasti sudah tidak asing lagi dengan Si Putih, kucing kesayangan Raib yang hadir di depan pintu rumahnya pada hari ulang tahun ke-9. Buku ini menceritakan tentang asal-usul kucing kesayangan Raib, masa lalunya yang tak kalah menarik untuk ditelurusuri. Bayangkanlah tentang makhluk lembut nan lucu yang menjadi peliharaan kesayangan Anda ternyata adalah hewan yang berkekuatan maha dahsyat di dunia paralel. Buku ini mengupas tuntas jati diri Si Putih, di luar hanya sebagai hewan yang menggemaskan tapi ternyata bisa menjadi salah satu petarung yang paling hebat. Ceritanya akan membawa imajinasi Anda membumbung tinggi hanyut oleh dunia yang penuh dengan kekuatan dan keajaiban.",
