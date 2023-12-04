@@ -125,6 +125,14 @@ function showDescription(book) {
   popup.appendChild(popupContent);
 
   document.body.appendChild(popup);
+  const buyButton = document.createElement("button");
+  buyButton.textContent = "Beli";
+  buyButton.onclick = function () {
+    window.open("https://www.gramedia.com/", "_blank");  };
+  popupContent.appendChild(buyButton);
+
+  popup.appendChild(popupContent);
+  document.body.appendChild(popup);
 }
 
 window.onload = function () {
