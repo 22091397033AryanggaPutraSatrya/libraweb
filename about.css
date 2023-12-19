@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,700&display=swap');
+
+
+* {
+    font-family: 'Candara', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+/* Header content */
+header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #E7E2E0;
+    padding: 1rem 7%;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,.1);
+}
+header .logo {
+    color: #000;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+header .logo i {
+    color: #D9C5BA;
+}
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    color: #666;
+    margin-right: 15px;
+}
+header .navbar a.active,
+header .navbar a:hover{
+    color: #fff;
+    background-color: #D9C5BA;
+}
+header .icons i,
+header .icons a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: #192a56;
+    border-radius: 50%;
+    background: #eee;
+}
+/* Animasi hover icons */
+header .icons i:hover,
+header .icons a:hover{
+    color: #fff;
+    background: #D9C5BA;
+    transform: rotate(360deg);
+}
+header .icons #menu-bar{
+    display: none;
+}
+/* Header contents ends */
+
+/* Dropdown menu navbar */
+ul {
+    list-style: none;
+    background: #D9C5BA;
+}
+ul li{
+    display: inline-block;
+    position: relative;
+}
+ul li a{
+    display: block;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    text-align: left;
+    font-size: 6px;
+    margin-top: 5px;
+}
+.navbar ul.dropdown li{
+    display: block;
+}
+.navbar ul.dropdown{
+    width: 10%;
+    background: #fff;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    border-radius: 5px;
+    margin-left: 80px;
+}
+ul li a:hover{
+    background: #000;
+}
+.navbar:hover ul.dropdown{
+    display: block;
+}
+
+/* ends Dropdown menu navbar */
+
+/* SECTION */
+section {
+    padding: 2rem 9%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+section:nth-child(even){
+    background: #fff;
+}
+#gadget{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+/* ENDS SECTION */
+
+/* Konten Utama */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Meningkatkan jarak antar elemen */
+    margin: 120px 20px 20px; /* Meningkatkan margin atas */
+    align-items: center;
+}
+
+/* Membesarkan ukuran kotak konten about dan contact */
+.about-content,
+.contact-content {
+    background-color: #fff;
+    padding: 30px; /* Meningkatkan padding */
+    border-radius: 10px; /* Meningkatkan border-radius */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2); /* Meningkatkan shadow */
+    width: 80%; /* Meningkatkan lebar */
+    max-width: 800px; /* Menambahkan max-width untuk mencegah terlalu lebar */
+    margin: 0 auto; /* Agar berada di tengah halaman */
+}
+
+/* Membesarkan ukuran input pada form kontak */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 15px; /* Meningkatkan jarak antara input dan elemen sebelumnya */
+    padding: 15px; /* Meningkatkan padding */
+    border-radius: 5px; /* Meningkatkan border-radius */
+    border: 1px solid #ccc;
+    font-size: 16px; /* Meningkatkan ukuran font */
+}
+
+/* Membesarkan ukuran teks pada form kontak */
+.contact-form p {
+    font-size: 18px; /* Meningkatkan ukuran font */
+    margin-top: 20px; /* Meningkatkan jarak antara input dan tulisan */
+}
+
+/* Membesarkan ukuran tombol pada form kontak */
+.contact-form button {
+    background-color: #EDD27C;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    padding: 12px 20px; /* Meningkatkan padding */
+}
+
+.contact-form button:hover {
+    background-color: #D9C5BA;
+}
+
+/* Membesarkan tulisan "Hubungi Kami" dan "Tentang Kami" */
+.contact-content h3,
+.about-content h3 {
+    font-size: 300px; /* Meningkatkan ukuran font */
+    margin-bottom: 50px; /* Meningkatkan jarak bawah */
+}
+
+/* Membesarkan ukuran tulisan "Selamat Datang" dan "Jika Anda..." */
+.main-content p {
+    font-size: 18px; /* Meningkatkan ukuran font */
+    margin-top: 20px; /* Meningkatkan jarak atas */
+}
+
+
+/* footer start */
+.footer .footer-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 3.2rem;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+#contact a{
+    text-decoration: none;
+}
+#follow{
+    margin-left: 30px;
+}
+.lower{
+    text-transform: lowercase;
+}
+.footer .footer-container .box h3{
+    padding: .5rem 0;
+    font-size: 2rem;
+    color: #192a56;
+}
+.footer .footer-container .box a{
+    display: block;
+    padding: .5rem 0;
+    font-size: 16px;
+    color: #666;
+}
+.footer .footer-container .box a:hover{
+    color: #ffa600fa;
+    text-decoration: underline;
+}
+.footer .copyright{
+    text-align: center;
+    border-top: .1rem solid rgba(0,0,0,.1);
+    font-size: 1.5rem;
+    color: #192a56;
+    padding: .5rem;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    margin-bottom: -1rem;
+}
+
+/* About page */
+
+.about-page p{
+    color: black;
+}
+.about-page .card h6{
+    font-size: 22px;
+}
+.about-page .card p{
+    font-size: 16px;
+    color: #ffa500;
+    font-weight: bold;
+}
+.about-page{
+    margin-top: 100px;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.about-page hr{
+    margin-top: 12px;
+    border: 0.5px solid rgb(226, 226, 226);
+}
+.about .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Ubah orientasi kolom agar gambar dan tulisan bertukar posisi */
+    margin-top: 2rem;
+}
+.about .image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* ends about page */
+
+/* SOCIAL MEDIA */
+.social-media{
+    display: flext;
+    text-align: center;
+    margin-left: 100px;
+    float: right;
+}
+.social-media h3{
+    font-size: 2rem;
+    color: #192a56;
+}
+.social-media img{
+    width: 30px;
+    margin-top: 10px;
+    margin-left: 2px;
+}
+.social-media img:hover{
+    border: solid 2px #ffa500;
+    border-radius: 50%;
+    color: #ffa500;
+}
+
+/* ENDS SOCIAL MEDIA */
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width:768px){
+
+    header .icons #menu-bars{
+        display: inline-block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #fff;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        border-bottom: .1rem solid rgba(0,0,0,.2);
+        padding: 1rem;
+    }
+
+    header .navbar a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: #eee;
+        margin-top: 60px;
+    }
+}

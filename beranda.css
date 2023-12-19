@@ -1,0 +1,392 @@
+/* Import font dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,700&display=swap');
+
+/* Reset gaya default dan menerapkan gaya global */
+* {
+    font-family: 'Candara', sans-serif; /* Menggunakan font Candara */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+/* Pengaturan ukuran font untuk rem dan halaman HTML */
+html {
+    font-size: 62%; /* Menetapkan 1 rem = 10px (untuk memudahkan perhitungan) */
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+}
+
+/* Bagian Header */
+header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #E7E2E0;
+    padding: 1rem 7%;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,.1);
+}
+
+/* Logo */
+header .logo {
+    color: #000;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+/* Ikon di dalam logo */
+header .logo i {
+    color: #D9C5BA;
+}
+
+/* Navigasi (Navbar) */
+header .navbar a {
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    color: #666;
+    margin-right: 15px;
+}
+
+/* Efek saat tombol di-hover */
+header .navbar a.active,
+header .navbar a:hover {
+    color: #fff;
+    background-color: #D9C5BA;
+}
+
+/* Ikon di bagian Header */
+header .icons i,
+header .icons a {
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: #192a56;
+    border-radius: 50%;
+    background: #eee;
+}
+
+/* Efek hover pada ikon */
+header .icons i:hover,
+header .icons a:hover {
+    color: #fff;
+    background: #D9C5BA;
+    transform: rotate(360deg);
+}
+
+/* Menu ikon mobile */
+header .icons #menu-bar {
+    display: none;
+}
+
+/* Dropdown menu navbar */
+ul {
+    list-style: none;
+    background: #D9C5BA;
+}
+ul li {
+    display: inline-block;
+    position: relative;
+}
+ul li a {
+    display: block;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    text-align: left;
+    font-size: 6px;
+    margin-top: 5px;
+}
+
+/* Gaya dropdown menu */
+.navbar ul.dropdown li {
+    display: block;
+}
+.navbar ul.dropdown {
+    width: 10%;
+    background: #fff;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    border-radius: 5px;
+    margin-left: 80px;
+}
+ul li a:hover {
+    background: #000;
+}
+.navbar:hover ul.dropdown {
+    display: block;
+}
+
+/* SEARCH CONTENT */
+.search-box {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    margin-top: 60px;
+    margin-bottom: -200px;
+}
+
+/* Konten dalam kotak pencarian */
+.content-box {
+    position: relative;
+    display: flex;
+    height: 40px;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* Input dalam kotak pencarian */
+.content-box input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+/* Ikon di dalam kotak pencarian */
+.content-box a .fas {
+    color: #192a56;
+    font-size: 18px;
+}
+
+/* CSS BERANDA */
+/* Gaya SECTION */
+section {
+    padding: 2rem 9%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+section:nth-child(even) {
+    background: #fff;
+}
+#gadget {
+    margin-top: 50px;
+}
+
+/* Gaya isi konten */
+body, h1, h2, h3, h4, h5, h6, p, span, a, li {
+    font-family: 'Candara', sans-serif;
+}
+
+/* Gaya HOME SLIDER */
+.home .home-slider .slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 9rem;
+}
+
+/* Gaya konten di dalam slider */
+.home .home-slider .slide .content {
+    flex: 1 1 65rem;
+    text-align: left;
+}
+.about .home-slider .slide .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Ubah orientasi kolom agar gambar dan tulisan bertukar posisi */
+    margin-top: 2rem;
+}
+.home .home-slider .slide .image {
+    flex: 1 1 45rem;
+    text-align: right;
+}
+.home .home-slider .slide .image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Gaya teks di dalam slider */
+.home .home-slider .slide .content h3 {
+    color: #5FA1C7;
+    font-size: 30px;
+    text-align: left;
+}
+.home .home-slider .slide .content p {
+    color: #666;
+    font-size: 16px;
+    padding: .6rem 0;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: justify;
+}
+
+/* Gaya tombol di dalam slider */
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 15px;
+    color: #000;
+    background: #EDD27C;
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .8rem 1.5rem;
+    justify-content: center;
+    margin-left: 0px;
+}
+.btn:hover {
+    background: #ffa600fa;
+}
+#btn-order {
+    margin-left: 0px;
+}
+
+/* Gaya sub-heading */
+.sub-heading {
+    text-align: center;
+    color: #ffa600fa;
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+/* Gaya heading */
+.heading {
+    text-align: center;
+    color: #192a56;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+/* Gaya gambar dalam box */
+.box img {
+    width: 24%;
+    display: inline-flex;
+}
+.cart {
+    width: 18px;
+    margin-right: 5px;
+}
+
+/* Gaya data penulis */
+section .content {
+    float: right;
+    width: 60%;
+    margin-top: 70px;
+    text-align: justify;
+}
+section .content img {
+    max-width: 100%; /* Pastikan gambar tidak melebihi lebar wadahnya */
+    height: auto;
+    margin-right: 20px;
+}
+section h3 {
+    font-size: 35px;
+    color: #ffa500;
+}
+section #deskripsi {
+    font-size: 16px;
+    color: #666;
+    margin-right: 100px;
+    line-height: 1.9;
+    margin-top: 10px;
+}
+.about .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Ubah orientasi kolom agar gambar dan tulisan bertukar posisi */
+    margin-top: 2rem;
+}
+.about .image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+/* END CSS BERANDA */
+
+/* Gaya footer */
+.footer .footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 3.2rem;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+#contact a {
+    text-decoration: none;
+}
+#follow {
+    margin-left: 30px;
+}
+.lower {
+    text-transform: lowercase;
+}
+.footer .footer-container .box h3 {
+    padding: .5rem 0;
+    font-size: 2rem;
+    color: #192a56;
+}
+.footer .footer-container .box a {
+    display: block;
+    padding: .5rem 0;
+    font-size: 16px;
+    color: #666;
+}
+.footer .footer-container .box a:hover {
+    color: #ffa600fa;
+    text-decoration: underline;
+}
+.footer .copyright {
+    text-align: center;
+    border-top: .1rem solid rgba(0,0,0,.1);
+    font-size: 1.5rem;
+    color: #192a56;
+    padding: .5rem;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    margin-bottom: -1rem;
+}
+
+/* Gaya media sosial */
+.social-media {
+    text-align: center;
+    margin-left: 100px;
+    float: right;
+}
+.social-media h3 {
+    font-size: 2rem;
+    color: #192a56;
+}
+.social-media img {
+    width: 30px;
+    margin-top: 10px;
+    margin-left: 2px;
+}
+.social-media img:hover {
+    border: solid 2px #ffa500;
+    border-radius: 50%;
+    color: #ffa500;
+}
