@@ -74,22 +74,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="footer-container">
             <div class="box">
                 <h3>Dapatkan Bantuan</h3>
-                <a href="#">FAQ</a>
-                <a href="#">Kebijakan Privasi</a>
+                <a href="">FAQ</a>
+                <a href="">Kebijakan Privasi</a>
             </div>
 
             <div class="box">
                 <h3>Tautan Cepat</h3>
                 <a href="beranda.html">Beranda</a>
                 <a href="book.html">Daftar Buku</a>
-                <a href="about.html">Bantuan</a>
+                <a href="about.php">Tentang Kami</a>
             </div>
 
             <div class="box" id="contact">
                 <h3>Info Kontak</h3>
-                <a href="#">+62-812-1723-4228</a>
+                <a href="">+62-812-1723-4228</a>
                 <a href="" class="lower">libraweb@gmail.com</a>
-                <a href="#">Surabaya, Indonesia - 60230</a>
+                <a href="">Surabaya, Indonesia - 60230</a>
             </div>
 
             <div class="social-media" id="follow">
