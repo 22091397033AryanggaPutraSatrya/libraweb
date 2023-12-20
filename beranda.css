@@ -10,7 +10,6 @@
     text-decoration: none;
     outline: none;
     border: none;
-    text-transform: capitalize;
     transition: all .2s linear;
 }
 
@@ -26,7 +25,7 @@ html {
 header {
     position: fixed;
     top: 0; left: 0; right: 0;
-    background: #E7E2E0;
+    background: linear-gradient(90deg, #91A1AB, #CAD7DF, #5FA1C7, #ADB8C2);
     padding: 1rem 7%;
     display: flex;
     text-align: center;
@@ -44,7 +43,7 @@ header .logo {
 
 /* Ikon di dalam logo */
 header .logo i {
-    color: #D9C5BA;
+    color: #E7E2E0;
 }
 
 /* Navigasi (Navbar) */
@@ -60,7 +59,6 @@ header .navbar a {
 header .navbar a.active,
 header .navbar a:hover {
     color: #fff;
-    background-color: #D9C5BA;
 }
 
 /* Ikon di bagian Header */
@@ -82,7 +80,6 @@ header .icons a {
 header .icons i:hover,
 header .icons a:hover {
     color: #fff;
-    background: #D9C5BA;
     transform: rotate(360deg);
 }
 
@@ -94,7 +91,6 @@ header .icons #menu-bar {
 /* Dropdown menu navbar */
 ul {
     list-style: none;
-    background: #D9C5BA;
 }
 ul li {
     display: inline-block;
@@ -116,7 +112,6 @@ ul li a {
 }
 .navbar ul.dropdown {
     width: 10%;
-    background: #fff;
     position: absolute;
     z-index: 999;
     display: none;
@@ -136,7 +131,6 @@ ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #fff;
     margin-top: 60px;
     margin-bottom: -200px;
 }
@@ -248,7 +242,7 @@ body, h1, h2, h3, h4, h5, h6, p, span, a, li {
     font-size: 15px;
     color: #000;
     background: #EDD27C;
-    border-radius: .5rem;
+    border-radius: .90rem;
     cursor: pointer;
     padding: .8rem 1.5rem;
     justify-content: center;
@@ -302,7 +296,7 @@ section .content img {
 }
 section h3 {
     font-size: 35px;
-    color: #ffa500;
+    color: #5FA1C7;
 }
 section #deskripsi {
     font-size: 16px;
@@ -329,36 +323,30 @@ section #deskripsi {
 
 /* Gaya footer */
 .footer .footer-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    gap: 3.2rem;
+    display: flex;
+    justify-content: center; /* Pusatkan secara horizontal */
+    align-items: center;
+    flex-direction: column; /* Tambahkan orientasi kolom */
     margin-top: 60px;
     margin-bottom: 20px;
 }
-#contact a {
-    text-decoration: none;
+
+.footer .footer-container #contact .contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Pusatkan secara horizontal */
+    align-items: center; /* Pusatkan secara vertikal */
+    margin-top: 20px; /* Beri jarak dari judul ke info kontak */
 }
-#follow {
-    margin-left: 30px;
-}
-.lower {
-    text-transform: lowercase;
-}
-.footer .footer-container .box h3 {
-    padding: .5rem 0;
-    font-size: 2rem;
-    color: #192a56;
-}
-.footer .footer-container .box a {
+
+.footer .footer-container #contact .contact-info a {
     display: block;
-    padding: .5rem 0;
-    font-size: 16px;
+    margin: 0 20px; /* Beri jarak antara info kontak */
     color: #666;
+    text-decoration: none;
+    font-size: 20PX; /* Perbesar ukuran font */
 }
-.footer .footer-container .box a:hover {
-    color: #ffa600fa;
-    text-decoration: underline;
-}
+
 .footer .copyright {
     text-align: center;
     border-top: .1rem solid rgba(0,0,0,.1);
@@ -368,25 +356,4 @@ section #deskripsi {
     padding-top: 2rem;
     margin-top: 2rem;
     margin-bottom: -1rem;
-}
-
-/* Gaya media sosial */
-.social-media {
-    text-align: center;
-    margin-left: 100px;
-    float: right;
-}
-.social-media h3 {
-    font-size: 2rem;
-    color: #192a56;
-}
-.social-media img {
-    width: 30px;
-    margin-top: 10px;
-    margin-left: 2px;
-}
-.social-media img:hover {
-    border: solid 2px #ffa500;
-    border-radius: 50%;
-    color: #ffa500;
 }
