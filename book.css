@@ -10,13 +10,12 @@
     text-decoration: none;
     outline: none;
     border: none;
-    text-transform: capitalize;
     transition: all .2s linear;
 }
 
 /* Pengaturan ukuran font untuk rem dan halaman HTML */
 html {
-    font-size: 62%;
+    font-size: 62%; /* Menetapkan 1 rem = 10px (untuk memudahkan perhitungan) */
     overflow-x: hidden;
     scroll-padding-top: 5rem;
     scroll-behavior: smooth;
@@ -26,7 +25,7 @@ html {
 header {
     position: fixed;
     top: 0; left: 0; right: 0;
-    background: #E7E2E0;
+    background: linear-gradient(90deg, #91A1AB, #CAD7DF, #5FA1C7, #ADB8C2);
     padding: 1rem 7%;
     display: flex;
     text-align: center;
@@ -44,7 +43,7 @@ header .logo {
 
 /* Ikon di dalam logo */
 header .logo i {
-    color: #D9C5BA;
+    color: #E7E2E0;
 }
 
 /* Navigasi (Navbar) */
@@ -60,7 +59,6 @@ header .navbar a {
 header .navbar a.active,
 header .navbar a:hover {
     color: #fff;
-    background-color: #D9C5BA;
 }
 
 /* Ikon di bagian Header */
@@ -82,7 +80,6 @@ header .icons a {
 header .icons i:hover,
 header .icons a:hover {
     color: #fff;
-    background: #D9C5BA;
     transform: rotate(360deg);
 }
 
@@ -94,7 +91,6 @@ header .icons #menu-bar {
 /* Dropdown menu navbar */
 ul {
     list-style: none;
-    background: #D9C5BA;
 }
 ul li {
     display: inline-block;
@@ -116,7 +112,6 @@ ul li a {
 }
 .navbar ul.dropdown {
     width: 10%;
-    background: #fff;
     position: absolute;
     z-index: 999;
     display: none;
@@ -136,8 +131,7 @@ ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #fff;
-    margin-top: 60px;
+    margin-top: 100px;
     margin-bottom: -200px;
 }
 
@@ -270,59 +264,6 @@ button {
 button:hover {
     background-color: #444;
 }
-
-/* Gaya popup */
-.popup {
-    position: fixed;
-    min-width: 50%;
-    max-width: 70%;
-    min-height: 10%;
-    max-height: 70%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #D9C5BA;
-    padding: 20px;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px 0px black;
-    z-index: 9999;
-    overflow: scroll;
-}
-
-/* Gaya teks judul dalam popup */
-.popup-content h3 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-}
-
-/* Gaya teks paragraf dalam popup */
-.popup-content p {
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
-}
-
-/* Gaya tombol dalam popup */
-.popup-content button {
-    font-size: 1.4rem;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-/* Gaya tombol close pada popup */
-.close {
-    font-size: 5rem; 
-    float: right;
-    cursor: pointer;
-}
-
-/* Sembunyikan scrollbar */
-::-webkit-scrollbar {
-    display: none;
-}
 /* END CSS BOOK */
 
 /* CSS KONTEN BOOK /*
@@ -331,38 +272,185 @@ section .content {
     width: 100%; /* Gunakan lebar penuh pada konten */
 }
 
+/* Bagian header dengan gambar latar belakang */
+.atas {
+    background-color: #f5f5f5;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Efek latar belakang overlay pada bagian header */
+.atas::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/bg.jpg);
+    background-size: cover;
+    filter: brightness(0.4);
+    z-index: -1;
+    background-position: center;
+}
+
+/* Gaya teks pada bagian header */
+h1 {
+    color: white;
+    padding-left: 20px;
+    font-size: 50px;
+    z-index: 1;
+}
+h2 {
+    font-size: x-large;
+    padding-left: 20px;
+}
+h3 {
+    font-size: x-large;
+}
+
+/* Paragraf pada bagian header */
+.atas p {
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    z-index: 1;
+    padding: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+/* Pengaturan flexbox */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Gaya kartu (card) */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    margin: 1rem;
+    padding: 1rem;
+    width: 200px;
+}
+
+/* Gaya teks judul kartu */
+.card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+/* Gaya gambar dalam kartu */
+.book-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+/* Gaya tombol */
+button {
+    background-color: #EDD27C;
+    color: #000;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #444;
+}
+
+/* Gaya popup */
+.popup {
+    position: fixed;
+    min-width: 70%;
+    max-width: 80%;
+    min-height: 10%;
+    max-height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(90deg, #91A1AB, #CAD7DF, #5FA1C7, #ADB8C2);
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px black;
+    z-index: 9999;
+    overflow: auto; /* Menggunakan overflow auto agar muncul scrollbar jika kontennya lebih besar dari area popup */
+    margin: 20px; /* Menambahkan jarak dari tepi popup ke elemen di sekitarnya */
+}
+
+/* Gaya teks judul dalam popup */
+.popup-content h3 {
+    font-size: 3rem;
+    margin-bottom: 3rem; /* Menambahkan jarak di bawah judul */
+    text-align: center; /* Pusatkan teks */
+}
+
+/* Gaya teks paragraf dalam popup */
+.popup-content p {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    text-align: justify; /* Menyusun teks menjadi rata kiri-kanan */
+}
+
+/* Gaya tombol dalam popup */
+.popup-content button {
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block; /* Menjadikan tombol sebagai elemen block agar berada pada baris yang terpisah */
+    margin: left; /* Pusatkan tombol */
+}
+
+
+/* Gaya tombol close pada popup */
+.close {
+    font-size: 5rem; 
+    float: right;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
 /* Gaya footer */
 .footer .footer-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    gap: 3.2rem;
+    display: flex;
+    justify-content: center; /* Pusatkan secara horizontal */
+    align-items: center;
+    flex-direction: column; /* Tambahkan orientasi kolom */
     margin-top: 60px;
     margin-bottom: 20px;
 }
-#contact a {
-    text-decoration: none;
+
+.footer .footer-container #contact .contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Pusatkan secara horizontal */
+    align-items: center; /* Pusatkan secara vertikal */
+    margin-top: 20px; /* Beri jarak dari judul ke info kontak */
 }
-#follow {
-    margin-left: 30px;
-}
-.lower {
-    text-transform: lowercase;
-}
-.footer .footer-container .box h3 {
-    padding: .5rem 0;
-    font-size: 2rem;
-    color: #192a56;
-}
-.footer .footer-container .box a {
+
+.footer .footer-container #contact .contact-info a {
     display: block;
-    padding: .5rem 0;
-    font-size: 16px;
+    margin: 0 20px; /* Beri jarak antara info kontak */
     color: #666;
+    text-decoration: none;
+    font-size: 20PX; /* Perbesar ukuran font */
 }
-.footer .footer-container .box a:hover {
-    color: #ffa600fa;
-    text-decoration: underline;
-}
+
 .footer .copyright {
     text-align: center;
     border-top: .1rem solid rgba(0,0,0,.1);
@@ -372,25 +460,4 @@ section .content {
     padding-top: 2rem;
     margin-top: 2rem;
     margin-bottom: -1rem;
-}
-
-/* Gaya media sosial */
-.social-media {
-    text-align: center;
-    margin-left: 100px;
-    float: right;
-}
-.social-media h3 {
-    font-size: 2rem;
-    color: #192a56;
-}
-.social-media img {
-    width: 30px;
-    margin-top: 10px;
-    margin-left: 2px;
-}
-.social-media img:hover {
-    border: solid 2px #ffa500;
-    border-radius: 50%;
-    color: #ffa500;
 }
