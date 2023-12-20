@@ -66,7 +66,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <p>Jika Anda memiliki pertanyaan, masukan, atau permintaan, jangan ragu untuk menghubungi kami. Isi formulir di bawah ini, dan kami akan merespons secepat mungkin.</p>
             
 
-            <form class="contact-form" action="proses.php" method="post">
+            <form class="contact-form" method="post">
                 <input type="text" name="nama" placeholder="Nama" required>
                 <input type="email" name="email" placeholder="Email" required>
                 <textarea name="pesan" placeholder="Pesan" required></textarea>
