@@ -1,29 +1,31 @@
+/* Import font dari Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,700&display=swap');
 
-
+/* Reset gaya default dan menerapkan gaya global */
 * {
-    font-family: 'Candara', sans-serif;
+    font-family: 'Candara', sans-serif; /* Menggunakan font Candara */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     outline: none;
     border: none;
-    text-transform: capitalize;
     transition: all .2s linear;
 }
+
+/* Pengaturan ukuran font untuk rem dan halaman HTML */
 html {
-    font-size: 62.5%;
+    font-size: 62%; /* Menetapkan 1 rem = 10px (untuk memudahkan perhitungan) */
     overflow-x: hidden;
-    scroll-padding-top: 5.5rem;
+    scroll-padding-top: 5rem;
     scroll-behavior: smooth;
 }
 
-/* Header content */
+/* Bagian Header */
 header {
     position: fixed;
     top: 0; left: 0; right: 0;
-    background: #E7E2E0;
+    background: linear-gradient(90deg, #91A1AB, #CAD7DF, #5FA1C7, #ADB8C2);
     padding: 1rem 7%;
     display: flex;
     text-align: center;
@@ -31,28 +33,37 @@ header {
     z-index: 1000;
     box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,.1);
 }
+
+/* Logo */
 header .logo {
     color: #000;
     font-size: 2.5rem;
     font-weight: bolder;
 }
+
+/* Ikon di dalam logo */
 header .logo i {
-    color: #D9C5BA;
+    color: #E7E2E0;
 }
-header .navbar a{
+
+/* Navigasi (Navbar) */
+header .navbar a {
     font-size: 1.7rem;
     border-radius: .5rem;
     padding:.5rem 1.5rem;
     color: #666;
     margin-right: 15px;
 }
+
+/* Efek saat tombol di-hover */
 header .navbar a.active,
-header .navbar a:hover{
+header .navbar a:hover {
     color: #fff;
-    background-color: #D9C5BA;
 }
+
+/* Ikon di bagian Header */
 header .icons i,
-header .icons a{
+header .icons a {
     cursor: pointer;
     margin-left: .5rem;
     height: 4.5rem;
@@ -64,28 +75,28 @@ header .icons a{
     border-radius: 50%;
     background: #eee;
 }
-/* Animasi hover icons */
+
+/* Efek hover pada ikon */
 header .icons i:hover,
-header .icons a:hover{
+header .icons a:hover {
     color: #fff;
-    background: #D9C5BA;
     transform: rotate(360deg);
 }
-header .icons #menu-bar{
+
+/* Menu ikon mobile */
+header .icons #menu-bar {
     display: none;
 }
-/* Header contents ends */
 
 /* Dropdown menu navbar */
 ul {
     list-style: none;
-    background: #D9C5BA;
 }
-ul li{
+ul li {
     display: inline-block;
     position: relative;
 }
-ul li a{
+ul li a {
     display: block;
     color: #fff;
     padding: 10px;
@@ -94,42 +105,25 @@ ul li a{
     font-size: 6px;
     margin-top: 5px;
 }
-.navbar ul.dropdown li{
+
+/* Gaya dropdown menu */
+.navbar ul.dropdown li {
     display: block;
 }
-.navbar ul.dropdown{
+.navbar ul.dropdown {
     width: 10%;
-    background: #fff;
     position: absolute;
     z-index: 999;
     display: none;
     border-radius: 5px;
     margin-left: 80px;
 }
-ul li a:hover{
+ul li a:hover {
     background: #000;
 }
-.navbar:hover ul.dropdown{
+.navbar:hover ul.dropdown {
     display: block;
 }
-
-/* ends Dropdown menu navbar */
-
-/* SECTION */
-section {
-    padding: 2rem 9%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-section:nth-child(even){
-    background: #fff;
-}
-#gadget{
-    margin-top: 50px;
-    margin-bottom: 20px;
-}
-/* ENDS SECTION */
-
 /* Konten Utama */
 .main-content {
     display: flex;
@@ -172,7 +166,7 @@ section:nth-child(even){
 .contact-form button {
     background-color: #EDD27C;
     color: #000;
-    border: none;
+    border-radius: 20%;
     cursor: pointer;
     padding: 12px 20px; /* Meningkatkan padding */
 }
@@ -184,58 +178,17 @@ section:nth-child(even){
 /* Membesarkan tulisan "Hubungi Kami" dan "Tentang Kami" */
 .contact-content h3,
 .about-content h3 {
-    font-size: 300px; /* Meningkatkan ukuran font */
+    font-size: 50rem; /* Meningkatkan ukuran font */
     margin-bottom: 50px; /* Meningkatkan jarak bawah */
+    text-align: center;
 }
 
 /* Membesarkan ukuran tulisan "Selamat Datang" dan "Jika Anda..." */
 .main-content p {
     font-size: 18px; /* Meningkatkan ukuran font */
     margin-top: 20px; /* Meningkatkan jarak atas */
-}
-
-
-/* footer start */
-.footer .footer-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    gap: 3.2rem;
-    margin-top: 60px;
+    text-align: justify;
     margin-bottom: 20px;
-}
-#contact a{
-    text-decoration: none;
-}
-#follow{
-    margin-left: 30px;
-}
-.lower{
-    text-transform: lowercase;
-}
-.footer .footer-container .box h3{
-    padding: .5rem 0;
-    font-size: 2rem;
-    color: #192a56;
-}
-.footer .footer-container .box a{
-    display: block;
-    padding: .5rem 0;
-    font-size: 16px;
-    color: #666;
-}
-.footer .footer-container .box a:hover{
-    color: #ffa600fa;
-    text-decoration: underline;
-}
-.footer .copyright{
-    text-align: center;
-    border-top: .1rem solid rgba(0,0,0,.1);
-    font-size: 1.5rem;
-    color: #192a56;
-    padding: .5rem;
-    padding-top: 2rem;
-    margin-top: 2rem;
-    margin-bottom: -1rem;
 }
 
 /* About page */
@@ -279,62 +232,39 @@ section:nth-child(even){
 
 /* ends about page */
 
-/* SOCIAL MEDIA */
-.social-media{
-    display: flext;
+/* Gaya footer */
+.footer .footer-container {
+    display: flex;
+    justify-content: center; /* Pusatkan secara horizontal */
+    align-items: center;
+    flex-direction: column; /* Tambahkan orientasi kolom */
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.footer .footer-container #contact .contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Pusatkan secara horizontal */
+    align-items: center; /* Pusatkan secara vertikal */
+    margin-top: 20px; /* Beri jarak dari judul ke info kontak */
+}
+
+.footer .footer-container #contact .contact-info a {
+    display: block;
+    margin: 0 20px; /* Beri jarak antara info kontak */
+    color: #666;
+    text-decoration: none;
+    font-size: 20PX; /* Perbesar ukuran font */
+}
+
+.footer .copyright {
     text-align: center;
-    margin-left: 100px;
-    float: right;
-}
-.social-media h3{
-    font-size: 2rem;
+    border-top: .1rem solid rgba(0,0,0,.1);
+    font-size: 1.5rem;
     color: #192a56;
-}
-.social-media img{
-    width: 30px;
-    margin-top: 10px;
-    margin-left: 2px;
-}
-.social-media img:hover{
-    border: solid 2px #ffa500;
-    border-radius: 50%;
-    color: #ffa500;
-}
-
-/* ENDS SOCIAL MEDIA */
-
-@media (max-width:991px){
-
-    html{
-        font-size: 55%;
-    }
-
-    header{
-        padding: 1rem 2rem;
-    }
-}
-
-@media (max-width:768px){
-
-    header .icons #menu-bars{
-        display: inline-block;
-    }
-
-    header .navbar{
-        position: absolute;
-        top: 100%; left: 0; right: 0;
-        background: #fff;
-        border-top: .1rem solid rgba(0,0,0,.2);
-        border-bottom: .1rem solid rgba(0,0,0,.2);
-        padding: 1rem;
-    }
-
-    header .navbar a{
-        display: block;
-        padding: 1.5rem;
-        margin: 1rem;
-        font-size: 2rem;
-        background: #eee;
-        margin-top: 60px;
-    }
+    padding: .5rem;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    margin-bottom: -1rem;
 }
